@@ -1,0 +1,123 @@
+/* Transactions.css */
+
+/* Custom styles for the heading */
+.dashboard-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Custom styles for the transactions card */
+  .transactions-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+
+  /* Transactions.css */
+
+/* Custom styles for the table */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.transactions-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Pagination styles */
+.react-bootstrap-table-pagination-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.react-bootstrap-table-page-btn {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.react-bootstrap-table-page-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #bbb;
+}
+
+.transactions-table td.type-cell {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.transactions-table td.type-cell.debit {
+  background-color: #ffc9c9; /* Slight red background for debit */
+}
+
+.transactions-table td.type-cell.credit {
+  background-color: #c9ffc9; /* Slight green background for credit */
+}
+
+.dropdown-menu {
+  background-color: #fff; /* Background color of the dropdown */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Dropdown.css */
+
+/* Styling for the dropdown menu */
+.dropdown-menu {
+  background-color: #fff; /* Background color of the dropdown */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0; /* Remove padding to make it more subtle */
+  width: auto; /* Allow the width to expand based on content */
+}
+
+/* Styling for individual items in the dropdown menu */
+.dropdown-item {
+  padding: 8px 20px;
+  color: #333;
+  border: none; /* Remove the default border */
+  transition: background-color 0.2s;
+  display: block; /* Display items as blocks */
+  width: 100%; /* Take full width */
+  text-align: left; /* Align text to the left */
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+  color: #000;
+}
+
+.back-button {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.back-button:hover {
+  color: #5bc0de;
+}
