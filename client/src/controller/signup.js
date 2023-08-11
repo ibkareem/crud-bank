@@ -2,7 +2,7 @@ import axios from 'axios';
 
 async function signup(phone, firstName, lastName, password) {
   try {
-    const response = await axios.post(`${process.env.BASE_URL}/signup`, {
+    const response = await axios.post(`https://crud-bank-production.up.railway.app/signup`, {
       phone,
       firstName,
       lastName,

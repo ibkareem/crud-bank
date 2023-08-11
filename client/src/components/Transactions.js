@@ -25,11 +25,14 @@ function Transactions() {
 
   const loadTransactions = async () => {
     try {
-      const response = await axios.get(`${process.env.BASE_URL}/transactions`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
+      const response = await axios.get(
+        `https://crud-bank-production.up.railway.app/transactions`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         },
-      });
+      );
       setTransactions(response.data.message);
     } catch (error) {
       swal.fire({

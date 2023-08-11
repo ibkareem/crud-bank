@@ -2,7 +2,7 @@ import axios from 'axios';
 
 async function getProfile(token) {
   try {
-    const response = await axios.get(`${process.env.BASE_URL}/profile`, {
+    const response = await axios.get(`https://crud-bank-production.up.railway.app/profile`, {
       headers: {
         Authorization: `Bearer ${token}`, // Set the Authorization header
       },
