@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from 'react-router-dom';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import './App.css';
@@ -26,9 +31,13 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/home" element={<InteractiveForm />} />
-          <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
-          <Route path="/transactions" element={<Transactions />} /> {/* Add this route */}
+          <Route path="/" element={<InteractiveForm />} />
+          <Route
+            path="/dashboard"
+            element={<PrivateRoute element={<Dashboard />} />}
+          />
+          <Route path="/transactions" element={<Transactions />} />{' '}
+          {/* Add this route */}
         </Routes>
       </div>
     </Router>
