@@ -25,7 +25,7 @@ function Transactions() {
 
   const loadTransactions = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/transactions', {
+      const response = await axios.get(`${process.env.BASE_URL}/transactions`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 async function getProfile(token) {
   try {
-    const response = await axios.get('http://localhost:3000/profile', {
+    const response = await axios.get(`${process.env.BASE_URL}/profile`, {
       headers: {
         Authorization: `Bearer ${token}`, // Set the Authorization header
       },
